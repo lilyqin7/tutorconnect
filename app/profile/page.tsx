@@ -27,7 +27,7 @@ export default async function ProfilePage() {
       : { data: null }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 justify-between px-6 py-8">
       <div>
         <h2 className="text-3xl font-bold tracking-tight">Profile Settings</h2>
         <p className="text-muted-foreground">Manage your profile information</p>

@@ -46,14 +46,14 @@ export default async function TutorsPage(props: { searchParams: SearchParams }) 
     : tutors
 
   return (
-    <div className="min-h-screen bg-muted/40">
+    <div className="min-h-screen bg-muted/40 justify-between px-6">
       <div className="container py-8">
         <div className="space-y-6">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Find a Tutor</h1>
             <p className="text-muted-foreground">Browse tutors by subject and find the perfect match</p>
           </div>
-
+          
           <TutorFilters subjects={subjects || []} selectedSubject={subjectFilter} />
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

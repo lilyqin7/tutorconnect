@@ -32,7 +32,8 @@ export function TutorFilters({ subjects, selectedSubject }: { subjects: Subject[
     <div className="flex flex-col gap-4 rounded-lg border bg-card p-4 sm:flex-row sm:items-end">
       <div className="flex-1">
         <Label htmlFor="subject-filter">Filter by Subject</Label>
-        <Select value={selectedSubject || "all"} onValueChange={handleSubjectChange}>
+        <div className="flex items-center gap-6">
+          <Select value={selectedSubject || "all"} onValueChange={handleSubjectChange}>
           <SelectTrigger id="subject-filter">
             <SelectValue placeholder="All subjects" />
           </SelectTrigger>
@@ -45,6 +46,7 @@ export function TutorFilters({ subjects, selectedSubject }: { subjects: Subject[
             ))}
           </SelectContent>
         </Select>
+        </div>
       </div>
 
       {selectedSubject && (

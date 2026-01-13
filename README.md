@@ -6,14 +6,6 @@ Live demo: https://tutorconnect-zeta.vercel.app/
 
 TutorConnect is a volunteer tutoring platform built with Next.js and Supabase. It helps students find volunteer tutors by subject, view tutor profiles, and schedule sessions. The UI uses Tailwind CSS and a set of reusable local components.
 
-**Quick Links**
-
-- App entry: [app/layout.tsx](app/layout.tsx)
-- Home page: [app/page.tsx](app/page.tsx)
-- Tutors listing: [app/tutors/page.tsx](app/tutors/page.tsx)
-- UI components: [components](components)
-- Supabase helpers: [lib/supabase](lib/supabase)
-
 **Tech Stack**
 
 - Framework: Next.js (App Router) with TypeScript and React
